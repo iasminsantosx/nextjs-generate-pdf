@@ -15,15 +15,6 @@ export default function Home({ people }) {
         <h1 className={styles.title}>
           Next JS Convert HTML to PDF
         </h1>
-        <div>
-          <ul>
-            {people.map(({ name }, i) => (
-              <li key={i}>
-                { name }
-              </li>
-            ))}
-          </ul>
-        </div>
         <GeneratePDF person={ people } />
       </main>
     </div>
